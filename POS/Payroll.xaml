@@ -1,0 +1,60 @@
+﻿<Window x:Class="POS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="936.447" Width="957.895">
+
+    <Grid ShowGridLines="True" RenderTransformOrigin="0.461,0.494">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"></ColumnDefinition>
+            <ColumnDefinition Width="*" Block.TextAlignment="Center"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel  HorizontalAlignment="Left" Height="532" Margin="12,11,0,0" Grid.Row="1" VerticalAlignment="Top" Width="279">
+
+            <Button Content="POS" Height="60" Margin="2" />
+            <Button Content="Inventory" Height="60"  Margin="2"/>
+            <Button Content="Financial Accounting" Height="60" Margin="2" />
+            <Button Content="Master" Height="60"  Margin="2"/>
+            <Button Content="Payroll" Height="60" Margin="2" />
+            <Button Content="Utility" Height="60"  Margin="2"/>
+            <Button Content="Help" Height="60" Margin="2" />
+            <Button Content="Login" Height="60"  Margin="2"/>
+            <Button Content="Exit" Height="60"  Margin="2"/>
+        </StackPanel>
+
+        <Grid Grid.Column="1" Margin="9,70,31,13"  Block.TextAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="280"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Absent Entry&#xD;&#xA;" Height="60" Margin="-1,-4,5,54" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" />
+            <Button Content="Salary Report&#xD;&#xA;&#xA;" Height="60" Margin="-1,3,5,47" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" />
+
+            <Button Content="Absent Report&#xD;&#xA;&#x9;" Height="60" Margin="2,-2,2,52" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" />
+        </Grid>
+
+
+
+    </Grid>
+</Window>

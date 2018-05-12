@@ -1,0 +1,68 @@
+﻿<Window x:Class="POS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="936.447" Width="957.895">
+
+    <Grid ShowGridLines="True" RenderTransformOrigin="0.461,0.494">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"></ColumnDefinition>
+            <ColumnDefinition Width="*" Block.TextAlignment="Center"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel  HorizontalAlignment="Left" Height="532" Margin="12,11,0,0" Grid.Row="1" VerticalAlignment="Top" Width="279">
+
+            <Button Content="POS" Height="60" Margin="2" />
+            <Button Content="Inventory" Height="60"  Margin="2"/>
+            <Button Content="Financial Accounting" Height="60" Margin="2" />
+            <Button Content="Master" Height="60"  Margin="2"/>
+            <Button Content="Payroll" Height="60" Margin="2" />
+            <Button Content="Utility" Height="60"  Margin="2"/>
+            <Button Content="Help" Height="60" Margin="2" />
+            <Button Content="Login" Height="60"  Margin="2"/>
+            <Button Content="Exit" Height="60"  Margin="2"/>
+        </StackPanel>
+
+        <Grid Margin="7,104,33,-21"  Block.TextAlignment="Center" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Content="App Configuration&#xD;&#xA;" Height="60" Margin="-5,-7,9,2" Grid.Column="0" Grid.Row="0" />
+            <Button Content="Button Configuration&#xD;&#xA;&#xA;&#xA;" Height="60" Margin="2" Grid.Column="0" Grid.Row="1" />
+            <Button Content="Group Setup&#xD;&#xA;&#xA;&#xA;" Height="60" Margin="2" Grid.Column="0" Grid.Row="2" />
+            <Button Content="Color Setup&#xD;&#xA;&#xA;&#xA;" Height="60" Margin="2" Grid.Column="0" Grid.Row="3" />
+            <Button Content="Bill Setup&#xD;&#xA;" Height="60" Margin="2" Grid.Column="0" Grid.Row="4" />
+
+            <Button Content="Screen Configuration&#xD;&#xA;&#xA;" Height="60" Margin="2" Grid.Column="1" Grid.Row="0" />
+            <Button Content="User Rights Configuration&#xD;&#xA;&#xA;" Height="60" Margin="2" Grid.Column="1" Grid.Row="1" />
+            <Button Content="User Management&#xD;&#xA;" Height="60" Margin="2" Grid.Column="1" Grid.Row="2" Click="Button_Click" />
+            <Button Content="Inventory Master&#xD;&#xA;" Height="60" Margin="2" Grid.Column="1" Grid.Row="3" />
+            <Button Content="SMS Gateway&#xD;&#xA;" Height="60" Margin="4,53,0,52" Grid.Column="1" Grid.Row="3" Grid.RowSpan="3" />
+            <Button Content="SQL Query&#xD;&#xA;&#xA;" Height="60" Margin="2,3,2,47" Grid.Column="0" Grid.Row="5" Grid.RowSpan="2" />
+        </Grid>
+
+
+
+    </Grid>
+</Window>
